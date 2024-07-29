@@ -1,0 +1,548 @@
+{
+  "address": "0x6efb7BC5dd2263D83D2De7D8bc460b27a51c2937",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "contracts",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "delayPeriod",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "delegateProxyImplementation",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "endGrantAuthentication",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "authAddress",
+          "type": "address"
+        }
+      ],
+      "name": "grantInitialAuthentication",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "initialAddressSet",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "pending",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "proxies",
+      "outputs": [
+        {
+          "internalType": "contract OwnableDelegateProxy",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "registerProxy",
+      "outputs": [
+        {
+          "internalType": "contract OwnableDelegateProxy",
+          "name": "proxy",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "registerProxyFor",
+      "outputs": [
+        {
+          "internalType": "contract OwnableDelegateProxy",
+          "name": "proxy",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "registerProxyOverride",
+      "outputs": [
+        {
+          "internalType": "contract OwnableDelegateProxy",
+          "name": "proxy",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "revokeAuthentication",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_delayPeriod",
+          "type": "uint256"
+        }
+      ],
+      "name": "setDelayPeriod",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "startGrantAuthentication",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "transferAccessTo",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xbc3ce8c814977862a93b9a2b65978ff483c9a716530a6ae40c44e6891e28544e",
+  "receipt": {
+    "to": null,
+    "from": "0x8959816C5E3154c354a9582180c1064d0F59f1b1",
+    "contractAddress": "0x6efb7BC5dd2263D83D2De7D8bc460b27a51c2937",
+    "transactionIndex": 6,
+    "gasUsed": "2402419",
+    "logsBloom": "0x00000000000000000000000000000000000000000000080000800000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000801020000000000804000000c00000000000000000000000000000000400000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000100000040000000000000000000000000000000000020000000008000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x8b2e150e8f989230e666a173b93fa97ce02a3ff4f7d00644a0004f3f559628f1",
+    "transactionHash": "0xbc3ce8c814977862a93b9a2b65978ff483c9a716530a6ae40c44e6891e28544e",
+    "logs": [
+      {
+        "transactionIndex": 6,
+        "blockNumber": 40576975,
+        "transactionHash": "0xbc3ce8c814977862a93b9a2b65978ff483c9a716530a6ae40c44e6891e28544e",
+        "address": "0x6efb7BC5dd2263D83D2De7D8bc460b27a51c2937",
+        "topics": [
+          "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+          "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "0x0000000000000000000000008959816c5e3154c354a9582180c1064d0f59f1b1"
+        ],
+        "data": "0x",
+        "logIndex": 18,
+        "blockHash": "0x8b2e150e8f989230e666a173b93fa97ce02a3ff4f7d00644a0004f3f559628f1"
+      },
+      {
+        "transactionIndex": 6,
+        "blockNumber": 40576975,
+        "transactionHash": "0xbc3ce8c814977862a93b9a2b65978ff483c9a716530a6ae40c44e6891e28544e",
+        "address": "0xf1fE6c897db2F3b6B342f2Fd2369C556d0652b20",
+        "topics": [
+          "0x2165014523a6f4135deffed62d70149aad59b64de5aac51e3abbcbe2a83e2f7e"
+        ],
+        "data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "logIndex": 19,
+        "blockHash": "0x8b2e150e8f989230e666a173b93fa97ce02a3ff4f7d00644a0004f3f559628f1"
+      }
+    ],
+    "blockNumber": 40576975,
+    "cumulativeGasUsed": "2965933",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "90ce8ac33db5a5561a6dddc82de03511",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.5+commit.eb77ed08\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"contracts\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"delayPeriod\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"delegateProxyImplementation\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"endGrantAuthentication\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"authAddress\",\"type\":\"address\"}],\"name\":\"grantInitialAuthentication\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"initialAddressSet\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"pending\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"proxies\",\"outputs\":[{\"internalType\":\"contract OwnableDelegateProxy\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"registerProxy\",\"outputs\":[{\"internalType\":\"contract OwnableDelegateProxy\",\"name\":\"proxy\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"registerProxyFor\",\"outputs\":[{\"internalType\":\"contract OwnableDelegateProxy\",\"name\":\"proxy\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"registerProxyOverride\",\"outputs\":[{\"internalType\":\"contract OwnableDelegateProxy\",\"name\":\"proxy\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"revokeAuthentication\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_delayPeriod\",\"type\":\"uint256\"}],\"name\":\"setDelayPeriod\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"startGrantAuthentication\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"}],\"name\":\"transferAccessTo\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Wyvern Protocol Developers\",\"kind\":\"dev\",\"methods\":{\"endGrantAuthentication(address)\":{\"details\":\"ProxyRegistry owner only\",\"params\":{\"addr\":\"Address to which to grant permissions\"}},\"grantInitialAuthentication(address)\":{\"details\":\"No delay, can only be called once - after that the standard registry process with a delay must be used\",\"params\":{\"authAddress\":\"Address of the contract to grant authentication\"}},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"registerProxy()\":{\"details\":\"Must be called by the user which the proxy is for, creates a new AuthenticatedProxy\",\"returns\":{\"proxy\":\"New AuthenticatedProxy contract\"}},\"registerProxyFor(address)\":{\"details\":\"Can be called by any user\",\"returns\":{\"proxy\":\"New AuthenticatedProxy contract\"}},\"registerProxyOverride()\":{\"details\":\"Must be called by the user which the proxy is for, creates a new AuthenticatedProxy\",\"returns\":{\"proxy\":\"New AuthenticatedProxy contract\"}},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"revokeAuthentication(address)\":{\"details\":\"ProxyRegistry owner only\",\"params\":{\"addr\":\"Address of which to revoke permissions\"}},\"startGrantAuthentication(address)\":{\"details\":\"ProxyRegistry owner only\",\"params\":{\"addr\":\"Address to which to grant permissions\"}},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}},\"title\":\"WyvernRegistry\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"endGrantAuthentication(address)\":{\"notice\":\"End the process to enable access for specified contract after delay period has passed.\"},\"grantInitialAuthentication(address)\":{\"notice\":\"Grant authentication to the initial Exchange protocol contract\"},\"registerProxy()\":{\"notice\":\"Register a proxy contract with this registry\"},\"registerProxyFor(address)\":{\"notice\":\"Register a proxy contract with this registry\"},\"registerProxyOverride()\":{\"notice\":\"Register a proxy contract with this registry, overriding any existing proxy\"},\"revokeAuthentication(address)\":{\"notice\":\"Revoke access for specified contract. Can be done instantly.\"},\"startGrantAuthentication(address)\":{\"notice\":\"Start the process to enable access for specified contract. Subject to delay period.\"},\"transferAccessTo(address,address)\":{\"notice\":\"Transfer access\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/IzanaNFTRegistry.sol\":\"IzanaNFTRegistry\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity >=0.6.0 <0.8.0;\\n\\nimport \\\"../utils/Context.sol\\\";\\n/**\\n * @dev Contract module which provides a basic access control mechanism, where\\n * there is an account (an owner) that can be granted exclusive access to\\n * specific functions.\\n *\\n * By default, the owner account will be the one that deploys the contract. This\\n * can later be changed with {transferOwnership}.\\n *\\n * This module is used through inheritance. It will make available the modifier\\n * `onlyOwner`, which can be applied to your functions to restrict their use to\\n * the owner.\\n */\\nabstract contract Ownable is Context {\\n    address private _owner;\\n\\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\\n\\n    /**\\n     * @dev Initializes the contract setting the deployer as the initial owner.\\n     */\\n    constructor () internal {\\n        address msgSender = _msgSender();\\n        _owner = msgSender;\\n        emit OwnershipTransferred(address(0), msgSender);\\n    }\\n\\n    /**\\n     * @dev Returns the address of the current owner.\\n     */\\n    function owner() public view virtual returns (address) {\\n        return _owner;\\n    }\\n\\n    /**\\n     * @dev Throws if called by any account other than the owner.\\n     */\\n    modifier onlyOwner() {\\n        require(owner() == _msgSender(), \\\"Ownable: caller is not the owner\\\");\\n        _;\\n    }\\n\\n    /**\\n     * @dev Leaves the contract without owner. It will not be possible to call\\n     * `onlyOwner` functions anymore. Can only be called by the current owner.\\n     *\\n     * NOTE: Renouncing ownership will leave the contract without an owner,\\n     * thereby removing any functionality that is only available to the owner.\\n     */\\n    function renounceOwnership() public virtual onlyOwner {\\n        emit OwnershipTransferred(_owner, address(0));\\n        _owner = address(0);\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Can only be called by the current owner.\\n     */\\n    function transferOwnership(address newOwner) public virtual onlyOwner {\\n        require(newOwner != address(0), \\\"Ownable: new owner is the zero address\\\");\\n        emit OwnershipTransferred(_owner, newOwner);\\n        _owner = newOwner;\\n    }\\n}\\n\",\"keccak256\":\"0x15e2d5bd4c28a88548074c54d220e8086f638a71ed07e6b3ba5a70066fcf458d\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/Context.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity >=0.6.0 <0.8.0;\\n\\n/*\\n * @dev Provides information about the current execution context, including the\\n * sender of the transaction and its data. While these are generally available\\n * via msg.sender and msg.data, they should not be accessed in such a direct\\n * manner, since when dealing with GSN meta-transactions the account sending and\\n * paying for execution may not be the actual sender (as far as an application\\n * is concerned).\\n *\\n * This contract is only required for intermediate, library-like contracts.\\n */\\nabstract contract Context {\\n    function _msgSender() internal view virtual returns (address payable) {\\n        return msg.sender;\\n    }\\n\\n    function _msgData() internal view virtual returns (bytes memory) {\\n        this; // silence state mutability warning without generating bytecode - see https://github.com/ethereum/solidity/issues/2691\\n        return msg.data;\\n    }\\n}\\n\",\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"license\":\"MIT\"},\"contracts/IzanaNFTRegistry.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.7.5;\\n\\nimport \\\"./registry/ProxyRegistry.sol\\\";\\nimport \\\"./registry/AuthenticatedProxy.sol\\\";\\nimport \\\"./libraries/ReentrancyGuarded.sol\\\";\\n\\n/**\\n * @title WyvernRegistry\\n * @author Wyvern Protocol Developers\\n */\\ncontract IzanaNFTRegistry is ProxyRegistry, ReentrancyGuarded {\\n    string public constant name = \\\"Wyvern Protocol Proxy Registry\\\";\\n\\n    /* Whether the initial auth address has been set. */\\n    bool public initialAddressSet = false;\\n\\n    constructor() {\\n        AuthenticatedProxy impl = new AuthenticatedProxy();\\n        impl.initialize(address(this), this);\\n        impl.setRevoke(true);\\n        delegateProxyImplementation = address(impl);\\n    }\\n\\n    /**\\n     * Grant authentication to the initial Exchange protocol contract\\n     *\\n     * @dev No delay, can only be called once - after that the standard registry process with a delay must be used\\n     * @param authAddress Address of the contract to grant authentication\\n     */\\n    function grantInitialAuthentication(address authAddress) public onlyOwner {\\n        require(\\n            !initialAddressSet,\\n            \\\"Wyvern Protocol Proxy Registry initial address already set\\\"\\n        );\\n        initialAddressSet = true;\\n        contracts[authAddress] = true;\\n    }\\n}\\n\",\"keccak256\":\"0x922d92f94c10b3e053183342670f6289fcf9796eaf9c868b52d508d4eaff362f\",\"license\":\"MIT\"},\"contracts/libraries/ReentrancyGuarded.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.7.5;\\n\\n/**\\n * @title ReentrancyGuarded\\n * @author Wyvern Protocol Developers\\n */\\ncontract ReentrancyGuarded {\\n    bool reentrancyLock = false;\\n\\n    /* Prevent a contract function from being reentrant-called. */\\n    modifier reentrancyGuard() {\\n        require(!reentrancyLock, \\\"Reentrancy detected\\\");\\n        reentrancyLock = true;\\n        _;\\n        reentrancyLock = false;\\n    }\\n}\\n\",\"keccak256\":\"0x72eecc78d910e2d1a4750eaf7516d2cce7001df34924cd07a340b1c6acd0c239\",\"license\":\"MIT\"},\"contracts/modules/ERC20.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.7.5;\\n\\nimport \\\"./ERC20Basic.sol\\\";\\n\\ninterface ERC20 is ERC20Basic {\\n    function allowance(address owner, address spender)\\n        external\\n        view\\n        returns (uint256);\\n\\n    function transferFrom(\\n        address from,\\n        address to,\\n        uint256 value\\n    ) external returns (bool);\\n\\n    function approve(address spender, uint256 value) external returns (bool);\\n\\n    event Approval(\\n        address indexed owner,\\n        address indexed spender,\\n        uint256 value\\n    );\\n}\\n\",\"keccak256\":\"0xa856d7879887ba488b6da02d754af0229a38424357e75cdf6b8e2a99f6598395\",\"license\":\"MIT\"},\"contracts/modules/ERC20Basic.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.7.5;\\n\\ninterface ERC20Basic {\\n    function totalSupply() external view returns (uint256);\\n\\n    function balanceOf(address who) external view returns (uint256);\\n\\n    function transfer(address to, uint256 value) external returns (bool);\\n\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n}\\n\",\"keccak256\":\"0x1e147f163b3d4e041dd5cc0c633269282c6fc980b6e11f24eb192fa776a51404\",\"license\":\"MIT\"},\"contracts/registry/AuthenticatedProxy.sol\":{\"content\":\"/* \\n\\n  Proxy contract to hold access to assets on behalf of a user (e.g. ERC20 approve) and execute calls under particular conditions.\\n\\n*/\\n// SPDX-License-Identifier: MIT\\npragma solidity 0.7.5;\\n\\nimport \\\"./ProxyRegistry.sol\\\";\\nimport \\\"./TokenRecipient.sol\\\";\\nimport \\\"./proxy/OwnedUpgradeabilityStorage.sol\\\";\\n\\n/**\\n * @title AuthenticatedProxy\\n * @author Wyvern Protocol Developers\\n */\\ncontract AuthenticatedProxy is TokenRecipient, OwnedUpgradeabilityStorage {\\n    /* Whether initialized. */\\n    bool initialized = false;\\n\\n    /* Address which owns this proxy. */\\n    address public user;\\n\\n    /* Associated registry with contract authentication information. */\\n    ProxyRegistry public registry;\\n\\n    /* Whether access has been revoked. */\\n    bool public revoked;\\n\\n    /* Delegate call could be used to atomically transfer multiple assets owned by the proxy contract with one order. */\\n    enum HowToCall {\\n        Call,\\n        DelegateCall\\n    }\\n\\n    /* Event fired when the proxy access is revoked or unrevoked. */\\n    event Revoked(bool revoked);\\n\\n    /**\\n     * Initialize an AuthenticatedProxy\\n     *\\n     * @param addrUser Address of user on whose behalf this proxy will act\\n     * @param addrRegistry Address of ProxyRegistry contract which will manage this proxy\\n     */\\n    function initialize(address addrUser, ProxyRegistry addrRegistry) public {\\n        require(!initialized, \\\"Authenticated proxy already initialized\\\");\\n        initialized = true;\\n        user = addrUser;\\n        registry = addrRegistry;\\n    }\\n\\n    /**\\n     * Set the revoked flag (allows a user to revoke ProxyRegistry access)\\n     *\\n     * @dev Can be called by the user only\\n     * @param revoke Whether or not to revoke access\\n     */\\n    function setRevoke(bool revoke) public {\\n        require(\\n            msg.sender == user,\\n            \\\"Authenticated proxy can only be revoked by its user\\\"\\n        );\\n        revoked = revoke;\\n        emit Revoked(revoke);\\n    }\\n\\n    /**\\n     * Execute a message call from the proxy contract\\n     *\\n     * @dev Can be called by the user, or by a contract authorized by the registry as long as the user has not revoked access\\n     * @param dest Address to which the call will be sent\\n     * @param howToCall Which kind of call to make\\n     * @param data Calldata to send\\n     * @return result Result of the call (success or failure)\\n     */\\n    function proxy(\\n        address dest,\\n        HowToCall howToCall,\\n        bytes memory data\\n    ) public returns (bool result, bytes memory ret) {\\n        require(\\n            msg.sender == user || (!revoked && registry.contracts(msg.sender)),\\n            \\\"Authenticated proxy can only be called by its user, or by a contract authorized by the registry as long as the user has not revoked access\\\"\\n        );\\n        if (howToCall == HowToCall.Call) {\\n            (result, ret) = dest.call(data);\\n        } else if (howToCall == HowToCall.DelegateCall) {\\n            (result, ret) = dest.delegatecall(data);\\n        }\\n    }\\n\\n    /**\\n     * Execute a message call and assert success\\n     *\\n     * @dev Same functionality as `proxy`, just asserts the return value\\n     * @param dest Address to which the call will be sent\\n     * @param howToCall What kind of call to make\\n     * @param data Calldata to send\\n     */\\n    function proxyAssert(\\n        address dest,\\n        HowToCall howToCall,\\n        bytes memory data\\n    ) public {\\n        (bool result, ) = proxy(dest, howToCall, data);\\n        require(result, \\\"Proxy assertion failed\\\");\\n    }\\n}\\n\",\"keccak256\":\"0x671b8c0123baefeae74274fda3aaafffd71cfc3903fbacc57d0510c9759a8b2d\",\"license\":\"MIT\"},\"contracts/registry/OwnableDelegateProxy.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.7.5;\\n\\nimport \\\"./proxy/OwnedUpgradeabilityProxy.sol\\\";\\n\\n/**\\n * @title OwnableDelegateProxy\\n * @author Wyvern Protocol Developers\\n */\\ncontract OwnableDelegateProxy is OwnedUpgradeabilityProxy {\\n    constructor(\\n        address owner,\\n        address initialImplementation,\\n        bytes memory data\\n    ) {\\n        require(owner != address(0), \\\"owner: zero address\\\");\\n        require(\\n            initialImplementation != address(0),\\n            \\\"initialImplementation: zero address\\\"\\n        );\\n        setUpgradeabilityOwner(owner);\\n        _upgradeTo(initialImplementation);\\n        (bool success, ) = initialImplementation.delegatecall(data);\\n        require(success, \\\"OwnableDelegateProxy failed implementation\\\");\\n    }\\n}\\n\",\"keccak256\":\"0x3d14bdf958bd25eb4c3e834a1307bfba0c70046c0b3cc401f67f5d7667d3feaa\",\"license\":\"MIT\"},\"contracts/registry/ProxyRegistry.sol\":{\"content\":\"/*\\n\\n  Proxy registry; keeps a mapping of AuthenticatedProxy contracts and mapping of contracts authorized to access them.  \\n  \\n  Abstracted away from the Exchange (a) to reduce Exchange attack surface and (b) so that the Exchange contract can be upgraded without users needing to transfer assets to new proxies.\\n\\n*/\\n// SPDX-License-Identifier: MIT\\npragma solidity 0.7.5;\\n\\nimport \\\"@openzeppelin/contracts/access/Ownable.sol\\\";\\n\\nimport \\\"./OwnableDelegateProxy.sol\\\";\\nimport \\\"./ProxyRegistryInterface.sol\\\";\\n\\n/**\\n * @title ProxyRegistry\\n * @author Wyvern Protocol Developers\\n */\\ncontract ProxyRegistry is Ownable, ProxyRegistryInterface {\\n    /* DelegateProxy implementation contract. Must be initialized. */\\n    address public override delegateProxyImplementation;\\n\\n    /* Authenticated proxies by user. */\\n    mapping(address => OwnableDelegateProxy) public override proxies;\\n\\n    /* Contracts pending access. */\\n    mapping(address => uint256) public pending;\\n\\n    /* Contracts allowed to call those proxies. */\\n    mapping(address => bool) public contracts;\\n\\n    /* Delay period for adding an authenticated contract.\\n       This mitigates a particular class of potential attack on the Wyvern DAO (which owns this registry) - if at any point the value of assets held by proxy contracts exceeded the value of half the WYV supply (votes in the DAO),\\n       a malicious but rational attacker could buy half the Wyvern and grant themselves access to all the proxy contracts. A delay period renders this attack nonthreatening - given two weeks, if that happened, users would have\\n       plenty of time to notice and transfer their assets.\\n    */\\n    uint256 public delayPeriod;\\n\\n    function setDelayPeriod(uint256 _delayPeriod) external onlyOwner {\\n        delayPeriod = _delayPeriod;\\n    }\\n\\n    /**\\n     * Start the process to enable access for specified contract. Subject to delay period.\\n     *\\n     * @dev ProxyRegistry owner only\\n     * @param addr Address to which to grant permissions\\n     */\\n    function startGrantAuthentication(address addr) public onlyOwner {\\n        require(\\n            !contracts[addr] && pending[addr] == 0,\\n            \\\"Contract is already allowed in registry, or pending\\\"\\n        );\\n        pending[addr] = block.timestamp;\\n    }\\n\\n    /**\\n     * End the process to enable access for specified contract after delay period has passed.\\n     *\\n     * @dev ProxyRegistry owner only\\n     * @param addr Address to which to grant permissions\\n     */\\n    function endGrantAuthentication(address addr) public onlyOwner {\\n        require(\\n            !contracts[addr] &&\\n                pending[addr] != 0 &&\\n                ((pending[addr] + delayPeriod) < block.timestamp),\\n            \\\"Contract is no longer pending or has already been approved by registry\\\"\\n        );\\n        pending[addr] = 0;\\n        contracts[addr] = true;\\n    }\\n\\n    /**\\n     * Revoke access for specified contract. Can be done instantly.\\n     *\\n     * @dev ProxyRegistry owner only\\n     * @param addr Address of which to revoke permissions\\n     */\\n    function revokeAuthentication(address addr) public onlyOwner {\\n        contracts[addr] = false;\\n    }\\n\\n    /**\\n     * Register a proxy contract with this registry\\n     *\\n     * @dev Must be called by the user which the proxy is for, creates a new AuthenticatedProxy\\n     * @return proxy New AuthenticatedProxy contract\\n     */\\n    function registerProxy() public returns (OwnableDelegateProxy proxy) {\\n        return registerProxyFor(msg.sender);\\n    }\\n\\n    /**\\n     * Register a proxy contract with this registry, overriding any existing proxy\\n     *\\n     * @dev Must be called by the user which the proxy is for, creates a new AuthenticatedProxy\\n     * @return proxy New AuthenticatedProxy contract\\n     */\\n    function registerProxyOverride()\\n        public\\n        returns (OwnableDelegateProxy proxy)\\n    {\\n        proxy = new OwnableDelegateProxy(\\n            msg.sender,\\n            delegateProxyImplementation,\\n            abi.encodeWithSignature(\\n                \\\"initialize(address,address)\\\",\\n                msg.sender,\\n                address(this)\\n            )\\n        );\\n        proxies[msg.sender] = proxy;\\n        return proxy;\\n    }\\n\\n    /**\\n     * Register a proxy contract with this registry\\n     *\\n     * @dev Can be called by any user\\n     * @return proxy New AuthenticatedProxy contract\\n     */\\n    function registerProxyFor(address user)\\n        public\\n        returns (OwnableDelegateProxy proxy)\\n    {\\n        require(\\n            proxies[user] == OwnableDelegateProxy(0),\\n            \\\"User already has a proxy\\\"\\n        );\\n        proxy = new OwnableDelegateProxy(\\n            user,\\n            delegateProxyImplementation,\\n            abi.encodeWithSignature(\\n                \\\"initialize(address,address)\\\",\\n                user,\\n                address(this)\\n            )\\n        );\\n        proxies[user] = proxy;\\n        return proxy;\\n    }\\n\\n    /**\\n     * Transfer access\\n     */\\n    function transferAccessTo(address from, address to) public {\\n        OwnableDelegateProxy proxy = proxies[from];\\n\\n        /* CHECKS */\\n        require(\\n            OwnableDelegateProxy(msg.sender) == proxy,\\n            \\\"Proxy transfer can only be called by the proxy\\\"\\n        );\\n        require(\\n            proxies[to] == OwnableDelegateProxy(0),\\n            \\\"Proxy transfer has existing proxy as destination\\\"\\n        );\\n\\n        /* EFFECTS */\\n        delete proxies[from];\\n        proxies[to] = proxy;\\n    }\\n}\\n\",\"keccak256\":\"0xb01121aeb23231ed47a6106ec144be5fc51e1bb5229eaf154aff231acf93a2f7\",\"license\":\"MIT\"},\"contracts/registry/ProxyRegistryInterface.sol\":{\"content\":\"/*\\n\\n  Proxy registry interface.\\n\\n*/\\n// SPDX-License-Identifier: MIT\\npragma solidity 0.7.5;\\n\\nimport \\\"./OwnableDelegateProxy.sol\\\";\\n\\n/**\\n * @title ProxyRegistryInterface\\n * @author Wyvern Protocol Developers\\n */\\ninterface ProxyRegistryInterface {\\n    function delegateProxyImplementation() external returns (address);\\n\\n    function proxies(address owner) external returns (OwnableDelegateProxy);\\n}\\n\",\"keccak256\":\"0x967c02f91200dabe58bbe466b3d046d5a4f2be60355d02e506ef076d67cb9176\",\"license\":\"MIT\"},\"contracts/registry/TokenRecipient.sol\":{\"content\":\"/*\\n\\n  Token recipient. Modified very slightly from the example on http://ethereum.org/dao (just to index log parameters).\\n\\n*/\\n// SPDX-License-Identifier: MIT\\npragma solidity 0.7.5;\\n\\nimport \\\"../modules/ERC20.sol\\\";\\n\\n/**\\n * @title TokenRecipient\\n * @author Wyvern Protocol Developers\\n */\\ncontract TokenRecipient {\\n    event ReceivedEther(address indexed sender, uint256 amount);\\n    event ReceivedTokens(\\n        address indexed from,\\n        uint256 value,\\n        address indexed token,\\n        bytes extraData\\n    );\\n\\n    /**\\n     * @dev Receive tokens and generate a log event\\n     * @param from Address from which to transfer tokens\\n     * @param value Amount of tokens to transfer\\n     * @param token Address of token\\n     * @param extraData Additional data to log\\n     */\\n    function receiveApproval(\\n        address from,\\n        uint256 value,\\n        address token,\\n        bytes memory extraData\\n    ) public {\\n        ERC20 t = ERC20(token);\\n        require(\\n            t.transferFrom(from, address(this), value),\\n            \\\"ERC20 token transfer failed\\\"\\n        );\\n        emit ReceivedTokens(from, value, token, extraData);\\n    }\\n\\n    /**\\n     * @dev Receive Ether and generate a log event\\n     */\\n    fallback() external payable {\\n        emit ReceivedEther(msg.sender, msg.value);\\n    }\\n\\n    /**\\n     * @dev Receive Ether and generate a log event\\n     */\\n    receive() external payable {\\n        emit ReceivedEther(msg.sender, msg.value);\\n    }\\n}\\n\",\"keccak256\":\"0x644673db7fd8c12cbe896ddd946393af0429ac95c943e5b693f4b26adc96bebb\",\"license\":\"MIT\"},\"contracts/registry/proxy/OwnedUpgradeabilityProxy.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.7.5;\\n\\nimport \\\"./Proxy.sol\\\";\\nimport \\\"./OwnedUpgradeabilityStorage.sol\\\";\\n\\n/**\\n * @title OwnedUpgradeabilityProxy\\n * @dev This contract combines an upgradeability proxy with basic authorization control functionalities\\n */\\ncontract OwnedUpgradeabilityProxy is Proxy, OwnedUpgradeabilityStorage {\\n    /**\\n     * @dev Event to show ownership has been transferred\\n     * @param previousOwner representing the address of the previous owner\\n     * @param newOwner representing the address of the new owner\\n     */\\n    event ProxyOwnershipTransferred(address previousOwner, address newOwner);\\n\\n    /**\\n     * @dev This event will be emitted every time the implementation gets upgraded\\n     * @param implementation representing the address of the upgraded implementation\\n     */\\n    event Upgraded(address indexed implementation);\\n\\n    /**\\n     * @dev Tells the address of the current implementation\\n     * @return address of the current implementation\\n     */\\n    function implementation() public view override returns (address) {\\n        return _implementation;\\n    }\\n\\n    /**\\n     * @dev Tells the proxy type (EIP 897)\\n     * @return proxyTypeId Proxy type, 2 for forwarding proxy\\n     */\\n    function proxyType() public pure override returns (uint256 proxyTypeId) {\\n        return 2;\\n    }\\n\\n    /**\\n     * @dev Upgrades the implementation address\\n     * @param implementation_ representing the address of the new implementation to be set\\n     */\\n    function _upgradeTo(address implementation_) internal {\\n        require(\\n            _implementation != implementation_,\\n            \\\"Proxy already uses this implementation\\\"\\n        );\\n        _implementation = implementation_;\\n        emit Upgraded(implementation_);\\n    }\\n\\n    /**\\n     * @dev Throws if called by any account other than the owner.\\n     */\\n    modifier onlyProxyOwner() {\\n        require(\\n            msg.sender == proxyOwner(),\\n            \\\"Only the proxy owner can call this method\\\"\\n        );\\n        _;\\n    }\\n\\n    /**\\n     * @dev Tells the address of the proxy owner\\n     * @return the address of the proxy owner\\n     */\\n    function proxyOwner() public view returns (address) {\\n        return upgradeabilityOwner();\\n    }\\n\\n    /**\\n     * @dev Allows the current owner to transfer control of the contract to a newOwner.\\n     * @param newOwner The address to transfer ownership to.\\n     */\\n    function transferProxyOwnership(address newOwner) public onlyProxyOwner {\\n        require(newOwner != address(0), \\\"New owner cannot be the null address\\\");\\n        emit ProxyOwnershipTransferred(proxyOwner(), newOwner);\\n        setUpgradeabilityOwner(newOwner);\\n    }\\n\\n    /**\\n     * @dev Allows the upgradeability owner to upgrade the current implementation of the proxy.\\n     * @param implementation_ representing the address of the new implementation to be set.\\n     */\\n    function upgradeTo(address implementation_) public onlyProxyOwner {\\n        _upgradeTo(implementation_);\\n    }\\n\\n    /**\\n     * @dev Allows the upgradeability owner to upgrade the current implementation of the proxy\\n     * and delegatecall the new implementation for initialization.\\n     * @param implementation_ representing the address of the new implementation to be set.\\n     * @param data represents the msg.data to bet sent in the low level call. This parameter may include the function\\n     * signature of the implementation to be called with the needed payload\\n     */\\n    function upgradeToAndCall(address implementation_, bytes memory data)\\n        public\\n        payable\\n        onlyProxyOwner\\n    {\\n        upgradeTo(implementation_);\\n        (bool success, ) = address(this).delegatecall(data);\\n        require(success, \\\"Call failed after proxy upgrade\\\");\\n    }\\n}\\n\",\"keccak256\":\"0x93685e9143aafff71901873599a890e51b22d278476256aa9db9786bb5c1f419\",\"license\":\"MIT\"},\"contracts/registry/proxy/OwnedUpgradeabilityStorage.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.7.5;\\n\\n/**\\n * @title OwnedUpgradeabilityStorage\\n * @dev This contract keeps track of the upgradeability owner\\n */\\ncontract OwnedUpgradeabilityStorage {\\n    // Current implementation\\n    address internal _implementation;\\n\\n    // Owner of the contract\\n    address private _upgradeabilityOwner;\\n\\n    /**\\n     * @dev Tells the address of the owner\\n     * @return the address of the owner\\n     */\\n    function upgradeabilityOwner() public view returns (address) {\\n        return _upgradeabilityOwner;\\n    }\\n\\n    /**\\n     * @dev Sets the address of the owner\\n     */\\n    function setUpgradeabilityOwner(address newUpgradeabilityOwner) internal {\\n        _upgradeabilityOwner = newUpgradeabilityOwner;\\n    }\\n}\\n\",\"keccak256\":\"0x975d5a759c8a0f2576a9aa7ac9cb73105e2a6dd72c65924da4a819d62db72b63\",\"license\":\"MIT\"},\"contracts/registry/proxy/Proxy.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity 0.7.5;\\n\\n/**\\n * @title Proxy\\n * @dev Gives the possibility to delegate any call to a foreign implementation.\\n */\\nabstract contract Proxy {\\n    /**\\n     * @dev Tells the address of the implementation where every call will be delegated.\\n     * @return address of the implementation to which it will be delegated\\n     */\\n    function implementation() public view virtual returns (address);\\n\\n    /**\\n     * @dev Tells the type of proxy (EIP 897)\\n     * @return proxyTypeId Type of proxy, 2 for upgradeable proxy\\n     */\\n    function proxyType() public pure virtual returns (uint256 proxyTypeId);\\n\\n    /**\\n     * @dev Fallback function allowing to perform a delegatecall to the given implementation.\\n     * This function will return whatever the implementation call returns\\n     */\\n    fallback() external payable {\\n        _receiveNativeToken();\\n    }\\n\\n    /**\\n     * @dev Receive function allowing to perform a delegatecall to the given implementation.\\n     * This function will return whatever the implementation call returns\\n     */\\n    receive() external payable {\\n        _receiveNativeToken();\\n    }\\n\\n    function _receiveNativeToken() private {\\n        address _impl = implementation();\\n        require(_impl != address(0), \\\"Proxy implementation required\\\");\\n\\n        assembly {\\n            let ptr := mload(0x40)\\n            calldatacopy(ptr, 0, calldatasize())\\n            let result := delegatecall(gas(), _impl, ptr, calldatasize(), 0, 0)\\n            let size := returndatasize()\\n            returndatacopy(ptr, 0, size)\\n\\n            switch result\\n            case 0 {\\n                revert(ptr, size)\\n            }\\n            default {\\n                return(ptr, size)\\n            }\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0xe275497fb42b64d283c4307e23d359c9e47190583a146bcadb2914ff91b78943\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x60806040526006805461ffff1916905534801561001b57600080fd5b50600061002661018c565b600080546001600160a01b0319166001600160a01b0383169081178255604051929350917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908290a350600060405161007e90610190565b604051809103906000f08015801561009a573d6000803e3d6000fd5b506040805163485cc95560e01b81523060048201819052602482015290519192506001600160a01b0383169163485cc9559160448082019260009290919082900301818387803b1580156100ed57600080fd5b505af1158015610101573d6000803e3d6000fd5b505060408051634c93505f60e01b81526001600482015290516001600160a01b0385169350634c93505f9250602480830192600092919082900301818387803b15801561014d57600080fd5b505af1158015610161573d6000803e3d6000fd5b5050600180546001600160a01b0319166001600160a01b0394909416939093179092555061019d9050565b3390565b610c3780611d5583390190565b611ba9806101ac6000396000f3fe60806040523480156200001157600080fd5b5060043610620001715760003560e01c8063715018a611620000e1578063d4e8e063116200008d578063ddd81f82116200006f578063ddd81f8214620003e8578063ef7f383414620003f2578063f2fde38b146200041b5762000171565b8063d4e8e063146200038e578063dcfa922214620003b75762000171565b806397204d8e11620000c357806397204d8e1462000351578063b1c94d94146200035b578063c455279114620003655762000171565b8063715018a6146200033d5780638da5cb5b14620003475762000171565b80633d57210711620001415780635eebea2011620001235780635eebea2014620002cf578063631d9e3f146200030a57806369dc9ff314620003145762000171565b80633d572107146200028657806353376d1f14620002a65762000171565b8062686741146200017657806306fdde0314620001bb5780631a86ac4f146200023d57806338b6e407146200025b575b600080fd5b6200019f600480360360208110156200018e57600080fd5b50356001600160a01b031662000444565b604080516001600160a01b039092168252519081900360200190f35b620001c562000609565b6040805160208082528351818301528351919283929083019185019080838360005b8381101562000201578181015183820152602001620001e7565b50505050905090810190601f1680156200022f5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6200024762000642565b604080519115158252519081900360200190f35b62000284600480360360208110156200027357600080fd5b50356001600160a01b031662000650565b005b62000284600480360360208110156200029e57600080fd5b5035620007a1565b6200028460048036036020811015620002be57600080fd5b50356001600160a01b03166200081f565b620002f860048036036020811015620002e757600080fd5b50356001600160a01b0316620008b9565b60408051918252519081900360200190f35b6200019f620008cb565b62000247600480360360208110156200032c57600080fd5b50356001600160a01b031662000a19565b6200028462000a2e565b6200019f62000af1565b6200019f62000b00565b620002f862000b0f565b6200019f600480360360208110156200037d57600080fd5b50356001600160a01b031662000b15565b6200028460048036036020811015620003a657600080fd5b50356001600160a01b031662000b30565b6200028460048036036040811015620003cf57600080fd5b506001600160a01b038135811691602001351662000c42565b6200019f62000d35565b62000284600480360360208110156200040a57600080fd5b50356001600160a01b031662000d47565b62000284600480360360208110156200043357600080fd5b50356001600160a01b031662000e3c565b6001600160a01b0381811660009081526002602052604081205490911615620004b4576040805162461bcd60e51b815260206004820152601860248201527f5573657220616c72656164792068617320612070726f78790000000000000000604482015290519081900360640190fd5b600154604080516001600160a01b0380861660248301523060448084019190915283518084039091018152606490920183526020820180517bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1663485cc95560e01b179052915185939290921691620005299062000f5b565b80846001600160a01b03168152602001836001600160a01b0316815260200180602001828103825283818151815260200191508051906020019080838360005b838110156200058357818101518382015260200162000569565b50505050905090810190601f168015620005b15780820380516001836020036101000a031916815260200191505b50945050505050604051809103906000f080158015620005d5573d6000803e3d6000fd5b506001600160a01b03928316600090815260026020526040902080546001600160a01b031916938216939093179092555090565b6040518060400160405280601e81526020017f57797665726e2050726f746f636f6c2050726f7879205265676973747279000081525081565b600654610100900460ff1681565b6200065a62000f57565b6001600160a01b03166200066d62000af1565b6001600160a01b031614620006c9576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b6001600160a01b03811660009081526004602052604090205460ff161580156200070a57506001600160a01b03811660009081526003602052604090205415155b80156200073357506005546001600160a01b038216600090815260036020526040902054429101105b620007705760405162461bcd60e51b815260040180806020018281038252604681526020018062001a916046913960600191505060405180910390fd5b6001600160a01b0316600090815260036020908152604080832083905560049091529020805460ff19166001179055565b620007ab62000f57565b6001600160a01b0316620007be62000af1565b6001600160a01b0316146200081a576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b600555565b6200082962000f57565b6001600160a01b03166200083c62000af1565b6001600160a01b03161462000898576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b6001600160a01b03166000908152600460205260409020805460ff19169055565b60036020526000908152604090205481565b6001546040805133602482018190523060448084019190915283518084039091018152606490920183526020820180517bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1663485cc95560e01b17905291516000936001600160a01b031691906200093f9062000f5b565b80846001600160a01b03168152602001836001600160a01b0316815260200180602001828103825283818151815260200191508051906020019080838360005b83811015620009995781810151838201526020016200097f565b50505050905090810190601f168015620009c75780820380516001836020036101000a031916815260200191505b50945050505050604051809103906000f080158015620009eb573d6000803e3d6000fd5b5033600090815260026020526040902080546001600160a01b0319166001600160a01b038316179055919050565b60046020526000908152604090205460ff1681565b62000a3862000f57565b6001600160a01b031662000a4b62000af1565b6001600160a01b03161462000aa7576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031690565b6001546001600160a01b031681565b60055481565b6002602052600090815260409020546001600160a01b031681565b62000b3a62000f57565b6001600160a01b031662000b4d62000af1565b6001600160a01b03161462000ba9576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b6001600160a01b03811660009081526004602052604090205460ff1615801562000be957506001600160a01b038116600090815260036020526040902054155b62000c265760405162461bcd60e51b815260040180806020018281038252603381526020018062001b416033913960400191505060405180910390fd5b6001600160a01b03166000908152600360205260409020429055565b6001600160a01b038083166000908152600260205260409020541633811462000c9d5760405162461bcd60e51b815260040180806020018281038252602e81526020018062001a3d602e913960400191505060405180910390fd5b6001600160a01b03828116600090815260026020526040902054161562000cf65760405162461bcd60e51b815260040180806020018281038252603081526020018062001ad76030913960400191505060405180910390fd5b6001600160a01b0392831660009081526002602052604080822080546001600160a01b0319908116909155938516825290208054919093169116179055565b600062000d423362000444565b905090565b62000d5162000f57565b6001600160a01b031662000d6462000af1565b6001600160a01b03161462000dc0576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b600654610100900460ff161562000e095760405162461bcd60e51b815260040180806020018281038252603a81526020018062001b07603a913960400191505060405180910390fd5b6006805461ff0019166101001790556001600160a01b03166000908152600460205260409020805460ff19166001179055565b62000e4662000f57565b6001600160a01b031662000e5962000af1565b6001600160a01b03161462000eb5576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b6001600160a01b03811662000efc5760405162461bcd60e51b815260040180806020018281038252602681526020018062001a6b6026913960400191505060405180910390fd5b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b3390565b610ad38062000f6a8339019056fe608060405234801561001057600080fd5b50604051610ad3380380610ad38339818101604052606081101561003357600080fd5b8151602083015160408085018051915193959294830192918464010000000082111561005e57600080fd5b90830190602082018581111561007357600080fd5b825164010000000081118282018810171561008d57600080fd5b82525081516020918201929091019080838360005b838110156100ba5781810151838201526020016100a2565b50505050905090810190601f1680156100e75780820380516001836020036101000a031916815260200191505b506040525050506001600160a01b038316610149576040805162461bcd60e51b815260206004820152601360248201527f6f776e65723a207a65726f206164647265737300000000000000000000000000604482015290519081900360640190fd5b6001600160a01b03821661018e5760405162461bcd60e51b8152600401808060200182810382526023815260200180610a606023913960400191505060405180910390fd5b6101978361028a565b6101a0826102ac565b6000826001600160a01b0316826040518082805190602001908083835b602083106101dc5780518252601f1990920191602091820191016101bd565b6001836020036101000a038019825116818451168082178552505050505050905001915050600060405180830381855af49150503d806000811461023c576040519150601f19603f3d011682016040523d82523d6000602084013e610241565b606091505b50509050806102815760405162461bcd60e51b815260040180806020018281038252602a815260200180610aa9602a913960400191505060405180910390fd5b50505050610341565b600180546001600160a01b0319166001600160a01b0392909216919091179055565b6000546001600160a01b03828116911614156102f95760405162461bcd60e51b8152600401808060200182810382526026815260200180610a836026913960400191505060405180910390fd5b600080546001600160a01b0319166001600160a01b038316908117825560405190917fbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b91a250565b610710806103506000396000f3fe6080604052600436106100745760003560e01c80634f1ef2861161004e5780634f1ef286146101165780635c60da1b146101cc5780636fde8202146101e1578063f1739cae146101f657610083565b8063025313a21461008b5780633659cfe6146100bc5780634555d5c9146100ef57610083565b3661008357610081610229565b005b610081610229565b34801561009757600080fd5b506100a06102b5565b604080516001600160a01b039092168252519081900360200190f35b3480156100c857600080fd5b50610081600480360360208110156100df57600080fd5b50356001600160a01b03166102c4565b3480156100fb57600080fd5b50610104610327565b60408051918252519081900360200190f35b6100816004803603604081101561012c57600080fd5b6001600160a01b03823516919081019060408101602082013564010000000081111561015757600080fd5b82018360208201111561016957600080fd5b8035906020019184600183028401116401000000008311171561018b57600080fd5b91908080601f01602080910402602001604051908101604052809392919081815260200183838082843760009201919091525092955061032c945050505050565b3480156101d857600080fd5b506100a0610488565b3480156101ed57600080fd5b506100a0610497565b34801561020257600080fd5b506100816004803603602081101561021957600080fd5b50356001600160a01b03166104a6565b6000610233610488565b90506001600160a01b038116610290576040805162461bcd60e51b815260206004820152601d60248201527f50726f787920696d706c656d656e746174696f6e207265717569726564000000604482015290519081900360640190fd5b60405136600082376000803683855af43d806000843e8180156102b1578184f35b8184fd5b60006102bf610497565b905090565b6102cc6102b5565b6001600160a01b0316336001600160a01b03161461031b5760405162461bcd60e51b81526004018080602001828103825260298152602001806106b26029913960400191505060405180910390fd5b61032481610596565b50565b600290565b6103346102b5565b6001600160a01b0316336001600160a01b0316146103835760405162461bcd60e51b81526004018080602001828103825260298152602001806106b26029913960400191505060405180910390fd5b61038c826102c4565b6000306001600160a01b0316826040518082805190602001908083835b602083106103c85780518252601f1990920191602091820191016103a9565b6001836020036101000a038019825116818451168082178552505050505050905001915050600060405180830381855af49150503d8060008114610428576040519150601f19603f3d011682016040523d82523d6000602084013e61042d565b606091505b5050905080610483576040805162461bcd60e51b815260206004820152601f60248201527f43616c6c206661696c65642061667465722070726f7879207570677261646500604482015290519081900360640190fd5b505050565b6000546001600160a01b031690565b6001546001600160a01b031690565b6104ae6102b5565b6001600160a01b0316336001600160a01b0316146104fd5760405162461bcd60e51b81526004018080602001828103825260298152602001806106b26029913960400191505060405180910390fd5b6001600160a01b0381166105425760405162461bcd60e51b815260040180806020018281038252602481526020018061068e6024913960400191505060405180910390fd5b7f5a3e66efaa1e445ebd894728a69d6959842ea1e97bd79b892797106e270efcd961056b6102b5565b604080516001600160a01b03928316815291841660208301528051918290030190a161032481610638565b6000546001600160a01b03828116911614156105e35760405162461bcd60e51b81526004018080602001828103825260268152602001806106686026913960400191505060405180910390fd5b6000805473ffffffffffffffffffffffffffffffffffffffff19166001600160a01b038316908117825560405190917fbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b91a250565b6001805473ffffffffffffffffffffffffffffffffffffffff19166001600160a01b039290921691909117905556fe50726f787920616c72656164792075736573207468697320696d706c656d656e746174696f6e4e6577206f776e65722063616e6e6f7420626520746865206e756c6c20616464726573734f6e6c79207468652070726f7879206f776e65722063616e2063616c6c2074686973206d6574686f64a2646970667358221220753648c84bf578d49e9446a63e6d297a36e1147bb95f7d0535acf9cf393b1ff964736f6c63430007050033696e697469616c496d706c656d656e746174696f6e3a207a65726f206164647265737350726f787920616c72656164792075736573207468697320696d706c656d656e746174696f6e4f776e61626c6544656c656761746550726f7879206661696c656420696d706c656d656e746174696f6e50726f7879207472616e736665722063616e206f6e6c792062652063616c6c6564206279207468652070726f78794f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373436f6e7472616374206973206e6f206c6f6e6765722070656e64696e67206f722068617320616c7265616479206265656e20617070726f76656420627920726567697374727950726f7879207472616e7366657220686173206578697374696e672070726f78792061732064657374696e6174696f6e57797665726e2050726f746f636f6c2050726f787920526567697374727920696e697469616c206164647265737320616c726561647920736574436f6e747261637420697320616c726561647920616c6c6f77656420696e2072656769737472792c206f722070656e64696e67a2646970667358221220e9737df423ac51f6dc4d0e0ad3f1b0ae8967793b65571fef8329c7b1381151b764736f6c6343000705003360806040526001805460ff60a01b1916905534801561001d57600080fd5b50610c0a8061002d6000396000f3fe60806040526004361061009a5760003560e01c80634f8632ba116100695780636fde82021161004e5780636fde8202146103e95780637b103999146103fe5780638f4ffcb114610413576100d7565b80634f8632ba1461038f57806363d256ce146103c0576100d7565b80631b0f7ba91461010f5780633f801f911461025b578063485cc955146103285780634c93505f14610363576100d7565b366100d75760408051348152905133917fa419615bc8fda4c87663805ee2a3597a6d71c1d476911d9892f340d965bc7bf1919081900360200190a2005b60408051348152905133917fa419615bc8fda4c87663805ee2a3597a6d71c1d476911d9892f340d965bc7bf1919081900360200190a2005b34801561011b57600080fd5b506101da6004803603606081101561013257600080fd5b6001600160a01b038235169160ff6020820135169181019060608101604082013564010000000081111561016557600080fd5b82018360208201111561017757600080fd5b8035906020019184600183028401116401000000008311171561019957600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506104e5945050505050565b60405180831515815260200180602001828103825283818151815260200191508051906020019080838360005b8381101561021f578181015183820152602001610207565b50505050905090810190601f16801561024c5780820380516001836020036101000a031916815260200191505b50935050505060405180910390f35b34801561026757600080fd5b506103266004803603606081101561027e57600080fd5b6001600160a01b038235169160ff602082013516918101906060810160408201356401000000008111156102b157600080fd5b8201836020820111156102c357600080fd5b803590602001918460018302840111640100000000831117156102e557600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600092019190915250929550610762945050505050565b005b34801561033457600080fd5b506103266004803603604081101561034b57600080fd5b506001600160a01b03813581169160200135166107ca565b34801561036f57600080fd5b506103266004803603602081101561038657600080fd5b5035151561086c565b34801561039b57600080fd5b506103a4610908565b604080516001600160a01b039092168252519081900360200190f35b3480156103cc57600080fd5b506103d5610917565b604080519115158252519081900360200190f35b3480156103f557600080fd5b506103a4610927565b34801561040a57600080fd5b506103a4610936565b34801561041f57600080fd5b506103266004803603608081101561043657600080fd5b6001600160a01b03823581169260208101359260408201359092169181019060808101606082013564010000000081111561047057600080fd5b82018360208201111561048257600080fd5b803590602001918460018302840111640100000000831117156104a457600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600092019190915250929550610945945050505050565b6002546000906060906001600160a01b03163314806105a55750600354600160a01b900460ff161580156105a55750600354604080517f69dc9ff300000000000000000000000000000000000000000000000000000000815233600482015290516001600160a01b03909216916369dc9ff391602480820192602092909190829003018186803b15801561057857600080fd5b505afa15801561058c573d6000803e3d6000fd5b505050506040513d60208110156105a257600080fd5b50515b6105e05760405162461bcd60e51b815260040180806020018281038252608a815260200180610b18608a913960a00191505060405180910390fd5b60008460018111156105ee57fe5b14156106a057846001600160a01b0316836040518082805190602001908083835b6020831061062e5780518252601f19909201916020918201910161060f565b6001836020036101000a0380198251168184511680821785525050505050509050019150506000604051808303816000865af19150503d8060008114610690576040519150601f19603f3d011682016040523d82523d6000602084013e610695565b606091505b50909250905061075a565b60018460018111156106ae57fe5b141561075a57846001600160a01b0316836040518082805190602001908083835b602083106106ee5780518252601f1990920191602091820191016106cf565b6001836020036101000a038019825116818451168082178552505050505050905001915050600060405180830381855af49150503d806000811461074e576040519150601f19603f3d011682016040523d82523d6000602084013e610753565b606091505b5090925090505b935093915050565b600061076f8484846104e5565b509050806107c4576040805162461bcd60e51b815260206004820152601660248201527f50726f787920617373657274696f6e206661696c656400000000000000000000604482015290519081900360640190fd5b50505050565b600154600160a01b900460ff16156108135760405162461bcd60e51b8152600401808060200182810382526027815260200180610af16027913960400191505060405180910390fd5b6001805460ff60a01b1916600160a01b179055600280546001600160a01b039384167fffffffffffffffffffffffff00000000000000000000000000000000000000009182161790915560038054929093169116179055565b6002546001600160a01b031633146108b55760405162461bcd60e51b8152600401808060200182810382526033815260200180610ba26033913960400191505060405180910390fd5b60038054821515600160a01b810260ff60a01b199092169190911790915560408051918252517f2165014523a6f4135deffed62d70149aad59b64de5aac51e3abbcbe2a83e2f7e9181900360200190a150565b6002546001600160a01b031681565b600354600160a01b900460ff1681565b6001546001600160a01b031690565b6003546001600160a01b031681565b604080517f23b872dd0000000000000000000000000000000000000000000000000000000081526001600160a01b03868116600483015230602483015260448201869052915184928316916323b872dd9160648083019260209291908290030181600087803b1580156109b757600080fd5b505af11580156109cb573d6000803e3d6000fd5b505050506040513d60208110156109e157600080fd5b5051610a34576040805162461bcd60e51b815260206004820152601b60248201527f455243323020746f6b656e207472616e73666572206661696c65640000000000604482015290519081900360640190fd5b826001600160a01b0316856001600160a01b03167fd65b48fd35864b3528d38e44760be5553248f89bf3ff6b06cca57817cc2650bf86856040518083815260200180602001828103825283818151815260200191508051906020019080838360005b83811015610aae578181015183820152602001610a96565b50505050905090810190601f168015610adb5780820380516001836020036101000a031916815260200191505b50935050505060405180910390a3505050505056fe41757468656e746963617465642070726f787920616c726561647920696e697469616c697a656441757468656e746963617465642070726f78792063616e206f6e6c792062652063616c6c65642062792069747320757365722c206f72206279206120636f6e747261637420617574686f72697a656420627920746865207265676973747279206173206c6f6e6720617320746865207573657220686173206e6f74207265766f6b65642061636365737341757468656e746963617465642070726f78792063616e206f6e6c79206265207265766f6b6564206279206974732075736572a26469706673582212206096013be1bf21b12469999c315499b3357c5d7f935cb373c0965046ece29e4364736f6c63430007050033",
+  "deployedBytecode": "0x60806040523480156200001157600080fd5b5060043610620001715760003560e01c8063715018a611620000e1578063d4e8e063116200008d578063ddd81f82116200006f578063ddd81f8214620003e8578063ef7f383414620003f2578063f2fde38b146200041b5762000171565b8063d4e8e063146200038e578063dcfa922214620003b75762000171565b806397204d8e11620000c357806397204d8e1462000351578063b1c94d94146200035b578063c455279114620003655762000171565b8063715018a6146200033d5780638da5cb5b14620003475762000171565b80633d57210711620001415780635eebea2011620001235780635eebea2014620002cf578063631d9e3f146200030a57806369dc9ff314620003145762000171565b80633d572107146200028657806353376d1f14620002a65762000171565b8062686741146200017657806306fdde0314620001bb5780631a86ac4f146200023d57806338b6e407146200025b575b600080fd5b6200019f600480360360208110156200018e57600080fd5b50356001600160a01b031662000444565b604080516001600160a01b039092168252519081900360200190f35b620001c562000609565b6040805160208082528351818301528351919283929083019185019080838360005b8381101562000201578181015183820152602001620001e7565b50505050905090810190601f1680156200022f5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6200024762000642565b604080519115158252519081900360200190f35b62000284600480360360208110156200027357600080fd5b50356001600160a01b031662000650565b005b62000284600480360360208110156200029e57600080fd5b5035620007a1565b6200028460048036036020811015620002be57600080fd5b50356001600160a01b03166200081f565b620002f860048036036020811015620002e757600080fd5b50356001600160a01b0316620008b9565b60408051918252519081900360200190f35b6200019f620008cb565b62000247600480360360208110156200032c57600080fd5b50356001600160a01b031662000a19565b6200028462000a2e565b6200019f62000af1565b6200019f62000b00565b620002f862000b0f565b6200019f600480360360208110156200037d57600080fd5b50356001600160a01b031662000b15565b6200028460048036036020811015620003a657600080fd5b50356001600160a01b031662000b30565b6200028460048036036040811015620003cf57600080fd5b506001600160a01b038135811691602001351662000c42565b6200019f62000d35565b62000284600480360360208110156200040a57600080fd5b50356001600160a01b031662000d47565b62000284600480360360208110156200043357600080fd5b50356001600160a01b031662000e3c565b6001600160a01b0381811660009081526002602052604081205490911615620004b4576040805162461bcd60e51b815260206004820152601860248201527f5573657220616c72656164792068617320612070726f78790000000000000000604482015290519081900360640190fd5b600154604080516001600160a01b0380861660248301523060448084019190915283518084039091018152606490920183526020820180517bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1663485cc95560e01b179052915185939290921691620005299062000f5b565b80846001600160a01b03168152602001836001600160a01b0316815260200180602001828103825283818151815260200191508051906020019080838360005b838110156200058357818101518382015260200162000569565b50505050905090810190601f168015620005b15780820380516001836020036101000a031916815260200191505b50945050505050604051809103906000f080158015620005d5573d6000803e3d6000fd5b506001600160a01b03928316600090815260026020526040902080546001600160a01b031916938216939093179092555090565b6040518060400160405280601e81526020017f57797665726e2050726f746f636f6c2050726f7879205265676973747279000081525081565b600654610100900460ff1681565b6200065a62000f57565b6001600160a01b03166200066d62000af1565b6001600160a01b031614620006c9576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b6001600160a01b03811660009081526004602052604090205460ff161580156200070a57506001600160a01b03811660009081526003602052604090205415155b80156200073357506005546001600160a01b038216600090815260036020526040902054429101105b620007705760405162461bcd60e51b815260040180806020018281038252604681526020018062001a916046913960600191505060405180910390fd5b6001600160a01b0316600090815260036020908152604080832083905560049091529020805460ff19166001179055565b620007ab62000f57565b6001600160a01b0316620007be62000af1565b6001600160a01b0316146200081a576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b600555565b6200082962000f57565b6001600160a01b03166200083c62000af1565b6001600160a01b03161462000898576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b6001600160a01b03166000908152600460205260409020805460ff19169055565b60036020526000908152604090205481565b6001546040805133602482018190523060448084019190915283518084039091018152606490920183526020820180517bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1663485cc95560e01b17905291516000936001600160a01b031691906200093f9062000f5b565b80846001600160a01b03168152602001836001600160a01b0316815260200180602001828103825283818151815260200191508051906020019080838360005b83811015620009995781810151838201526020016200097f565b50505050905090810190601f168015620009c75780820380516001836020036101000a031916815260200191505b50945050505050604051809103906000f080158015620009eb573d6000803e3d6000fd5b5033600090815260026020526040902080546001600160a01b0319166001600160a01b038316179055919050565b60046020526000908152604090205460ff1681565b62000a3862000f57565b6001600160a01b031662000a4b62000af1565b6001600160a01b03161462000aa7576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031690565b6001546001600160a01b031681565b60055481565b6002602052600090815260409020546001600160a01b031681565b62000b3a62000f57565b6001600160a01b031662000b4d62000af1565b6001600160a01b03161462000ba9576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b6001600160a01b03811660009081526004602052604090205460ff1615801562000be957506001600160a01b038116600090815260036020526040902054155b62000c265760405162461bcd60e51b815260040180806020018281038252603381526020018062001b416033913960400191505060405180910390fd5b6001600160a01b03166000908152600360205260409020429055565b6001600160a01b038083166000908152600260205260409020541633811462000c9d5760405162461bcd60e51b815260040180806020018281038252602e81526020018062001a3d602e913960400191505060405180910390fd5b6001600160a01b03828116600090815260026020526040902054161562000cf65760405162461bcd60e51b815260040180806020018281038252603081526020018062001ad76030913960400191505060405180910390fd5b6001600160a01b0392831660009081526002602052604080822080546001600160a01b0319908116909155938516825290208054919093169116179055565b600062000d423362000444565b905090565b62000d5162000f57565b6001600160a01b031662000d6462000af1565b6001600160a01b03161462000dc0576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b600654610100900460ff161562000e095760405162461bcd60e51b815260040180806020018281038252603a81526020018062001b07603a913960400191505060405180910390fd5b6006805461ff0019166101001790556001600160a01b03166000908152600460205260409020805460ff19166001179055565b62000e4662000f57565b6001600160a01b031662000e5962000af1565b6001600160a01b03161462000eb5576040805162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015290519081900360640190fd5b6001600160a01b03811662000efc5760405162461bcd60e51b815260040180806020018281038252602681526020018062001a6b6026913960400191505060405180910390fd5b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b3390565b610ad38062000f6a8339019056fe608060405234801561001057600080fd5b50604051610ad3380380610ad38339818101604052606081101561003357600080fd5b8151602083015160408085018051915193959294830192918464010000000082111561005e57600080fd5b90830190602082018581111561007357600080fd5b825164010000000081118282018810171561008d57600080fd5b82525081516020918201929091019080838360005b838110156100ba5781810151838201526020016100a2565b50505050905090810190601f1680156100e75780820380516001836020036101000a031916815260200191505b506040525050506001600160a01b038316610149576040805162461bcd60e51b815260206004820152601360248201527f6f776e65723a207a65726f206164647265737300000000000000000000000000604482015290519081900360640190fd5b6001600160a01b03821661018e5760405162461bcd60e51b8152600401808060200182810382526023815260200180610a606023913960400191505060405180910390fd5b6101978361028a565b6101a0826102ac565b6000826001600160a01b0316826040518082805190602001908083835b602083106101dc5780518252601f1990920191602091820191016101bd565b6001836020036101000a038019825116818451168082178552505050505050905001915050600060405180830381855af49150503d806000811461023c576040519150601f19603f3d011682016040523d82523d6000602084013e610241565b606091505b50509050806102815760405162461bcd60e51b815260040180806020018281038252602a815260200180610aa9602a913960400191505060405180910390fd5b50505050610341565b600180546001600160a01b0319166001600160a01b0392909216919091179055565b6000546001600160a01b03828116911614156102f95760405162461bcd60e51b8152600401808060200182810382526026815260200180610a836026913960400191505060405180910390fd5b600080546001600160a01b0319166001600160a01b038316908117825560405190917fbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b91a250565b610710806103506000396000f3fe6080604052600436106100745760003560e01c80634f1ef2861161004e5780634f1ef286146101165780635c60da1b146101cc5780636fde8202146101e1578063f1739cae146101f657610083565b8063025313a21461008b5780633659cfe6146100bc5780634555d5c9146100ef57610083565b3661008357610081610229565b005b610081610229565b34801561009757600080fd5b506100a06102b5565b604080516001600160a01b039092168252519081900360200190f35b3480156100c857600080fd5b50610081600480360360208110156100df57600080fd5b50356001600160a01b03166102c4565b3480156100fb57600080fd5b50610104610327565b60408051918252519081900360200190f35b6100816004803603604081101561012c57600080fd5b6001600160a01b03823516919081019060408101602082013564010000000081111561015757600080fd5b82018360208201111561016957600080fd5b8035906020019184600183028401116401000000008311171561018b57600080fd5b91908080601f01602080910402602001604051908101604052809392919081815260200183838082843760009201919091525092955061032c945050505050565b3480156101d857600080fd5b506100a0610488565b3480156101ed57600080fd5b506100a0610497565b34801561020257600080fd5b506100816004803603602081101561021957600080fd5b50356001600160a01b03166104a6565b6000610233610488565b90506001600160a01b038116610290576040805162461bcd60e51b815260206004820152601d60248201527f50726f787920696d706c656d656e746174696f6e207265717569726564000000604482015290519081900360640190fd5b60405136600082376000803683855af43d806000843e8180156102b1578184f35b8184fd5b60006102bf610497565b905090565b6102cc6102b5565b6001600160a01b0316336001600160a01b03161461031b5760405162461bcd60e51b81526004018080602001828103825260298152602001806106b26029913960400191505060405180910390fd5b61032481610596565b50565b600290565b6103346102b5565b6001600160a01b0316336001600160a01b0316146103835760405162461bcd60e51b81526004018080602001828103825260298152602001806106b26029913960400191505060405180910390fd5b61038c826102c4565b6000306001600160a01b0316826040518082805190602001908083835b602083106103c85780518252601f1990920191602091820191016103a9565b6001836020036101000a038019825116818451168082178552505050505050905001915050600060405180830381855af49150503d8060008114610428576040519150601f19603f3d011682016040523d82523d6000602084013e61042d565b606091505b5050905080610483576040805162461bcd60e51b815260206004820152601f60248201527f43616c6c206661696c65642061667465722070726f7879207570677261646500604482015290519081900360640190fd5b505050565b6000546001600160a01b031690565b6001546001600160a01b031690565b6104ae6102b5565b6001600160a01b0316336001600160a01b0316146104fd5760405162461bcd60e51b81526004018080602001828103825260298152602001806106b26029913960400191505060405180910390fd5b6001600160a01b0381166105425760405162461bcd60e51b815260040180806020018281038252602481526020018061068e6024913960400191505060405180910390fd5b7f5a3e66efaa1e445ebd894728a69d6959842ea1e97bd79b892797106e270efcd961056b6102b5565b604080516001600160a01b03928316815291841660208301528051918290030190a161032481610638565b6000546001600160a01b03828116911614156105e35760405162461bcd60e51b81526004018080602001828103825260268152602001806106686026913960400191505060405180910390fd5b6000805473ffffffffffffffffffffffffffffffffffffffff19166001600160a01b038316908117825560405190917fbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b91a250565b6001805473ffffffffffffffffffffffffffffffffffffffff19166001600160a01b039290921691909117905556fe50726f787920616c72656164792075736573207468697320696d706c656d656e746174696f6e4e6577206f776e65722063616e6e6f7420626520746865206e756c6c20616464726573734f6e6c79207468652070726f7879206f776e65722063616e2063616c6c2074686973206d6574686f64a2646970667358221220753648c84bf578d49e9446a63e6d297a36e1147bb95f7d0535acf9cf393b1ff964736f6c63430007050033696e697469616c496d706c656d656e746174696f6e3a207a65726f206164647265737350726f787920616c72656164792075736573207468697320696d706c656d656e746174696f6e4f776e61626c6544656c656761746550726f7879206661696c656420696d706c656d656e746174696f6e50726f7879207472616e736665722063616e206f6e6c792062652063616c6c6564206279207468652070726f78794f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373436f6e7472616374206973206e6f206c6f6e6765722070656e64696e67206f722068617320616c7265616479206265656e20617070726f76656420627920726567697374727950726f7879207472616e7366657220686173206578697374696e672070726f78792061732064657374696e6174696f6e57797665726e2050726f746f636f6c2050726f787920526567697374727920696e697469616c206164647265737320616c726561647920736574436f6e747261637420697320616c726561647920616c6c6f77656420696e2072656769737472792c206f722070656e64696e67a2646970667358221220e9737df423ac51f6dc4d0e0ad3f1b0ae8967793b65571fef8329c7b1381151b764736f6c63430007050033",
+  "devdoc": {
+    "author": "Wyvern Protocol Developers",
+    "kind": "dev",
+    "methods": {
+      "endGrantAuthentication(address)": {
+        "details": "ProxyRegistry owner only",
+        "params": {
+          "addr": "Address to which to grant permissions"
+        }
+      },
+      "grantInitialAuthentication(address)": {
+        "details": "No delay, can only be called once - after that the standard registry process with a delay must be used",
+        "params": {
+          "authAddress": "Address of the contract to grant authentication"
+        }
+      },
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "registerProxy()": {
+        "details": "Must be called by the user which the proxy is for, creates a new AuthenticatedProxy",
+        "returns": {
+          "proxy": "New AuthenticatedProxy contract"
+        }
+      },
+      "registerProxyFor(address)": {
+        "details": "Can be called by any user",
+        "returns": {
+          "proxy": "New AuthenticatedProxy contract"
+        }
+      },
+      "registerProxyOverride()": {
+        "details": "Must be called by the user which the proxy is for, creates a new AuthenticatedProxy",
+        "returns": {
+          "proxy": "New AuthenticatedProxy contract"
+        }
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+      },
+      "revokeAuthentication(address)": {
+        "details": "ProxyRegistry owner only",
+        "params": {
+          "addr": "Address of which to revoke permissions"
+        }
+      },
+      "startGrantAuthentication(address)": {
+        "details": "ProxyRegistry owner only",
+        "params": {
+          "addr": "Address to which to grant permissions"
+        }
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      }
+    },
+    "title": "WyvernRegistry",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "endGrantAuthentication(address)": {
+        "notice": "End the process to enable access for specified contract after delay period has passed."
+      },
+      "grantInitialAuthentication(address)": {
+        "notice": "Grant authentication to the initial Exchange protocol contract"
+      },
+      "registerProxy()": {
+        "notice": "Register a proxy contract with this registry"
+      },
+      "registerProxyFor(address)": {
+        "notice": "Register a proxy contract with this registry"
+      },
+      "registerProxyOverride()": {
+        "notice": "Register a proxy contract with this registry, overriding any existing proxy"
+      },
+      "revokeAuthentication(address)": {
+        "notice": "Revoke access for specified contract. Can be done instantly."
+      },
+      "startGrantAuthentication(address)": {
+        "notice": "Start the process to enable access for specified contract. Subject to delay period."
+      },
+      "transferAccessTo(address,address)": {
+        "notice": "Transfer access"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 4453,
+        "contract": "contracts/IzanaNFTRegistry.sol:IzanaNFTRegistry",
+        "label": "_owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 14965,
+        "contract": "contracts/IzanaNFTRegistry.sol:IzanaNFTRegistry",
+        "label": "delegateProxyImplementation",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_address"
+      },
+      {
+        "astId": 14970,
+        "contract": "contracts/IzanaNFTRegistry.sol:IzanaNFTRegistry",
+        "label": "proxies",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_address,t_contract(OwnableDelegateProxy)14952)"
+      },
+      {
+        "astId": 14974,
+        "contract": "contracts/IzanaNFTRegistry.sol:IzanaNFTRegistry",
+        "label": "pending",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_mapping(t_address,t_uint256)"
+      },
+      {
+        "astId": 14978,
+        "contract": "contracts/IzanaNFTRegistry.sol:IzanaNFTRegistry",
+        "label": "contracts",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_mapping(t_address,t_bool)"
+      },
+      {
+        "astId": 14980,
+        "contract": "contracts/IzanaNFTRegistry.sol:IzanaNFTRegistry",
+        "label": "delayPeriod",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 14296,
+        "contract": "contracts/IzanaNFTRegistry.sol:IzanaNFTRegistry",
+        "label": "reentrancyLock",
+        "offset": 0,
+        "slot": "6",
+        "type": "t_bool"
+      },
+      {
+        "astId": 10651,
+        "contract": "contracts/IzanaNFTRegistry.sol:IzanaNFTRegistry",
+        "label": "initialAddressSet",
+        "offset": 1,
+        "slot": "6",
+        "type": "t_bool"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_contract(OwnableDelegateProxy)14952": {
+        "encoding": "inplace",
+        "label": "contract OwnableDelegateProxy",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      },
+      "t_mapping(t_address,t_contract(OwnableDelegateProxy)14952)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => contract OwnableDelegateProxy)",
+        "numberOfBytes": "32",
+        "value": "t_contract(OwnableDelegateProxy)14952"
+      },
+      "t_mapping(t_address,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "izananft-contracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "ethSepolia:deploy": "hardhat deploy --network ethSepolia",
+    "ethSepolia:verify": "hardhat --network ethSepolia etherscan-verify --solc-input",
+    "bscTestnet:deploy": "hardhat deploy --network bscTestnet",
+    "bscTestnet:verify": "hardhat --network bscTestnet etherscan-verify --solc-input",
+    "polygonAmoy:deploy": "hardhat deploy --network polygonAmoy",
+    "polygonAmoy:verify": "hardhat --network polygonAmoy etherscan-verify --solc-input",
+    "bscMainnet:deploy": "hardhat deploy --network bscMainnet",
+    "bscMainnet:verify": "hardhat --network bscMainnet etherscan-verify --solc-input",
+    "ethMainnet:deploy": "hardhat deploy --network ethMainnet",
+    "ethMainnet:verify": "hardhat --network ethMainnet etherscan-verify --solc-input",
+    "ethSepolia": "yarn ethSepolia:deploy && yarn ethSepolia:verify",
+    "polygonAmoy": "yarn polygonAmoy:deploy && yarn polygonAmoy:verify",
+    "bscTestnet": "yarn bscTestnet:deploy && yarn bscTestnet:verify"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^3.4.2",
+    "abi-decoder": "^2.4.0",
+    "hardhat-console": "^1.0.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "2.0.2",
+    "@openzeppelin/contracts": "^3.4.0",
+    "chai": "4",
+    "dotenv": "^10.0.0",
+    "hardhat": "^2.22.4",
+    "hardhat-abi-exporter": "^2.2.1",
+    "hardhat-contract-sizer": "^2.5.1",
+    "hardhat-deploy": "^0.12.4",
+    "hardhat-log-remover": "^2.0.2",
+    "ts-generator": "^0.1.1",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
